@@ -30,7 +30,29 @@ main
 			+setBox()
 			position: relative
 			z-index: 10
-			+pad(2rem 3rem)
+			+pad(2rem 4rem)
+			h2 
+				position: relative
+				text-align: center
+				span 
+					background: #fff
+					+pad(0 .5rem)
+				&:before,
+				&:after 
+					display: block
+					height: 2px 
+					width: 50%
+					content: ''
+					position: absolute
+					top: 50%
+				&:before
+					+background-gradient(#000, #FFF)
+					right: 0
+					z-index: -1
+				&:after
+					+background-gradient(#FFF, #000)
+					left: 0
+					z-index: -1
 			.btn-primary
 				+bor-rad(40px)
 				+pad(.5rem 2rem)

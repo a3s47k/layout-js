@@ -6369,9 +6369,45 @@ main {
       position: relative;
       z-index: 10;
       padding-top: 2rem;
-      padding-right: 3rem;
+      padding-right: 4rem;
       padding-bottom: 2rem;
-      padding-left: 3rem; }
+      padding-left: 4rem; }
+      .loginform .box .boxinner h2 {
+        position: relative;
+        text-align: center; }
+        .loginform .box .boxinner h2 span {
+          background: #fff;
+          padding-top: 0;
+          padding-right: 0.5rem;
+          padding-bottom: 0;
+          padding-left: 0.5rem; }
+        .loginform .box .boxinner h2:before, .loginform .box .boxinner h2:after {
+          display: block;
+          height: 2px;
+          width: 50%;
+          content: '';
+          position: absolute;
+          top: 50%; }
+        .loginform .box .boxinner h2:before {
+          background: -moz-linear-gradient(0deg, #000 0%, #FFF 100%);
+          background: -webkit-gradient(linear, left top, right top, color-stop(0%, #000), color-stop(100%, #FFF));
+          background: -webkit-linear-gradient(0deg, #000 0%, #FFF 100%);
+          background: -o-linear-gradient(0deg, #000 0%, #FFF 100%);
+          background: -ms-linear-gradient(0deg, #000 0%, #FFF 100%);
+          background: linear-gradient(90deg, #000 0%, #FFF 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF', GradientType=0 );
+          right: 0;
+          z-index: -1; }
+        .loginform .box .boxinner h2:after {
+          background: -moz-linear-gradient(0deg, #FFF 0%, #000 100%);
+          background: -webkit-gradient(linear, left top, right top, color-stop(0%, #FFF), color-stop(100%, #000));
+          background: -webkit-linear-gradient(0deg, #FFF 0%, #000 100%);
+          background: -o-linear-gradient(0deg, #FFF 0%, #000 100%);
+          background: -ms-linear-gradient(0deg, #FFF 0%, #000 100%);
+          background: linear-gradient(90deg, #FFF 0%, #000 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#000', GradientType=0 );
+          left: 0;
+          z-index: -1; }
       .loginform .box .boxinner .btn-primary {
         border-radius: 40px;
         padding-top: 0.5rem;
