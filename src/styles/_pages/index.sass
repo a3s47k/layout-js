@@ -58,6 +58,19 @@ main
 				+pad(.5rem 2rem)
 			.boxinput
 				position: relative
+				&:after 
+					display: block
+					content: ''
+					height: 2px
+					background: green
+					width: 0
+					z-index: 100
+					+pos(abs, null null 0 50%)
+					transform: translateX(-50%)
+					transition: .35s all ease-in-out
+				&.active
+					&:after 
+						width: 100%
 				input
 					background: none 
 					border: 0
@@ -76,5 +89,7 @@ main
 					&:focus
 						outline: none
 						box-shadow: none
+						&:after 
+							width: 100%
 						~ label
 							transform: scale(.8) translate(-10px,-20px)

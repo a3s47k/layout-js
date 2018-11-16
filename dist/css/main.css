@@ -6416,6 +6416,20 @@ main {
         padding-left: 2rem; }
       .loginform .box .boxinner .boxinput {
         position: relative; }
+        .loginform .box .boxinner .boxinput:after {
+          display: block;
+          content: '';
+          height: 2px;
+          background: green;
+          width: 0;
+          z-index: 100;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: .35s all ease-in-out; }
+        .loginform .box .boxinner .boxinput.active:after {
+          width: 100%; }
         .loginform .box .boxinner .boxinput input {
           background: none;
           border: 0;
@@ -6438,6 +6452,8 @@ main {
         .loginform .box .boxinner .boxinput input:focus {
           outline: none;
           box-shadow: none; }
+          .loginform .box .boxinner .boxinput input:focus:after {
+            width: 100%; }
           .loginform .box .boxinner .boxinput input:focus ~ label {
             transform: scale(0.8) translate(-10px, -20px); }
 

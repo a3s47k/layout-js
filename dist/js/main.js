@@ -31,4 +31,7 @@ $(function () {
         $('select.form-control').removeClass('form-control').css('width', '100%');
     }
 });
+$('.boxinput input').on('focus blur', function () {
+    $(this).parents('.boxinput').toggleClass('active');
+});
 //# sourceMappingURL=main.js.map
